@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="244" viewBox="0 0 1200 244" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">From idea to application</title>
+  <desc id="desc">An animated development loop: understand the problem, connect models and data, build the application, and iterate with feedback.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="244" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0D151C"/><stop offset="1" stop-color="#0A1017"/>
+    </linearGradient>
+    <linearGradient id="progress" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#BDFF71"/><stop offset=".5" stop-color="#58E8CE"/><stop offset="1" stop-color="#8794FF"/>
+    </linearGradient>
+    <clipPath id="bounds"><rect x="1" y="1" width="1198" height="242" rx="18"/></clipPath>
+  </defs>
+  <style>
+    .mono { font-family: 'Cascadia Code', 'SFMono-Regular', Consolas, monospace; }
+    .sans { font-family: Inter, 'Segoe UI', Arial, sans-serif; }
+    .step { opacity: .15; animation: step 12s linear infinite; }
+    .two { animation-delay: 3s; }
+    .three { animation-delay: 6s; }
+    .four { animation-delay: 9s; }
+    .progress { animation: progress 12s linear infinite; }
+    .data { animation: data 3s linear infinite; }
+    .cursor { animation: blink 1.4s steps(1) infinite; }
+    @keyframes step { 0%, 23% { opacity: 1; } 25%, 98% { opacity: .15; } 100% { opacity: 1; } }
+    @keyframes progress { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+    @keyframes data { to { stroke-dashoffset: -48; } }
+    @keyframes blink { 0%, 65% { opacity: 1; } 66%, 100% { opacity: .1; } }
+    @media (prefers-reduced-motion: reduce) {
+      .step, .progress, .data, .cursor { animation: none; }
+      .step { opacity: .6; }
+    }
+  </style>
+  <g clip-path="url(#bounds)">
+    <rect width="1200" height="244" fill="url(#bg)"/>
+    <path d="M0 48H1200" stroke="#24342F"/>
+    <circle cx="29" cy="25" r="5" fill="#FF7778" opacity=".8"/>
+    <circle cx="47" cy="25" r="5" fill="#F6CF73" opacity=".8"/>
+    <circle cx="65" cy="25" r="5" fill="#BDFF71" opacity=".8"/>
+    <text x="92" y="29" class="mono" font-size="12" fill="#95AAA0">~/workspace / build-loop</text>
+    <text x="1170" y="29" class="mono" font-size="11" text-anchor="end" letter-spacing="1.2" fill="#789387">IDEA → APPLICATION</text>
+
+    <g class="mono">
+      <rect x="34" y="75" width="244" height="94" rx="12" fill="#121D22" stroke="#2B3B35"/>
+      <rect x="34" y="75" width="244" height="94" rx="12" fill="#BDFF71" fill-opacity=".035" stroke="#BDFF71" class="step"/>
+      <text x="53" y="101" font-size="11" letter-spacing="1" fill="#BDFF71">01 / UNDERSTAND</text>
+      <text x="53" y="134" class="sans" font-size="20" font-weight="600" fill="#E4EEE8">Start with a problem.</text>
+      <text x="53" y="154" font-size="11" fill="#82978D">user needs · real scenarios</text>
+
+      <rect x="330" y="75" width="244" height="94" rx="12" fill="#121D22" stroke="#2B3B35"/>
+      <rect x="330" y="75" width="244" height="94" rx="12" fill="#58E8CE" fill-opacity=".035" stroke="#58E8CE" class="step two"/>
+      <text x="349" y="101" font-size="11" letter-spacing="1" fill="#58E8CE">02 / CONNECT</text>
+      <text x="349" y="134" class="sans" font-size="20" font-weight="600" fill="#E4EEE8">Give AI the context.</text>
+      <text x="349" y="154" font-size="11" fill="#82978D">models · knowledge · tools</text>
+
+      <rect x="626" y="75" width="244" height="94" rx="12" fill="#121D22" stroke="#2B3B35"/>
+      <rect x="626" y="75" width="244" height="94" rx="12" fill="#86BFFF" fill-opacity=".035" stroke="#86BFFF" class="step three"/>
+      <text x="645" y="101" font-size="11" letter-spacing="1" fill="#86BFFF">03 / BUILD</text>
+      <text x="645" y="134" class="sans" font-size="20" font-weight="600" fill="#E4EEE8">Make it usable.</text>
+      <text x="645" y="154" font-size="11" fill="#82978D">API · streaming · interface</text>
+
+      <rect x="922" y="75" width="244" height="94" rx="12" fill="#121D22" stroke="#2B3B35"/>
+      <rect x="922" y="75" width="244" height="94" rx="12" fill="#AB9BFF" fill-opacity=".035" stroke="#AB9BFF" class="step four"/>
+      <text x="941" y="101" font-size="11" letter-spacing="1" fill="#AB9BFF">04 / ITERATE</text>
+      <text x="941" y="134" class="sans" font-size="20" font-weight="600" fill="#E4EEE8">Keep getting better.</text>
+      <text x="941" y="154" font-size="11" fill="#82978D">feedback · evaluation · repeat</text>
+    </g>
+    <g stroke="#5B806D" stroke-width="1.5">
+      <path d="M286 123H320M582 123H616M878 123H912" stroke-dasharray="4 4" class="data"/>
+      <path d="M315 119L320 123L315 127M611 119L616 123L611 127M907 119L912 123L907 127"/>
+    </g>
+    <text x="34" y="213" class="mono" font-size="13" fill="#BDFF71">❯</text>
+    <text x="52" y="213" class="mono" font-size="12" fill="#91A79A">less hype, more useful applications.</text>
+    <rect x="322" y="203" width="7" height="13" fill="#BDFF71" class="cursor"/>
+    <text x="1166" y="213" text-anchor="end" class="mono" font-size="11" letter-spacing="1" fill="#657E70">BUILD → LEARN → REPEAT</text>
+    <rect y="241" width="1200" height="3" fill="url(#progress)" class="progress"/>
+  </g>
+  <rect x=".5" y=".5" width="1199" height="243" rx="18.5" stroke="#2B3C36"/>
+</svg>

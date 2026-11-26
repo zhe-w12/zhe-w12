@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">zhe-w12 — AI Application Developer · LLM Apps, Agents &amp; RAG</title>
+  <desc id="desc">A dark, animated banner for an AI application developer building LLM apps, agents and RAG systems. Tech stack: LangGraph, LLM APIs, Tool Calling, RAG, Milvus, Python, FastAPI, WebSocket, SSE, React, TypeScript. An orbiting AI core connects LLM, Agent and RAG.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="440" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0D151C"/><stop offset="1" stop-color="#090E14"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="60" y1="0" x2="1140" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#BDFF71"/><stop offset=".5" stop-color="#58E8CE"/><stop offset="1" stop-color="#8794FF"/>
+    </linearGradient>
+    <radialGradient id="aura">
+      <stop stop-color="#3ADCB9" stop-opacity=".12"/><stop offset="1" stop-color="#3ADCB9" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="core">
+      <stop stop-color="#213B38"/><stop offset="1" stop-color="#111E24"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" stroke="#99CABD" stroke-opacity=".045"/>
+    </pattern>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <clipPath id="bounds"><rect x="1" y="1" width="1198" height="438" rx="22"/></clipPath>
+  </defs>
+  <style>
+    .mono { font-family: 'Cascadia Code', 'SFMono-Regular', Consolas, monospace; }
+    .sans { font-family: Inter, 'Segoe UI', Arial, sans-serif; }
+    .orbit { transform-origin: 945px 217px; animation: spin 32s linear infinite; }
+    .counter-orbit { transform-origin: 945px 217px; animation: spin 48s linear infinite reverse; }
+    .signal { animation: signal 5s linear infinite; }
+    .breathe { animation: breathe 4s ease-in-out infinite; }
+    .cursor { animation: cursor 1.4s steps(1) infinite; }
+    .flow { animation: flow 4s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes signal { to { stroke-dashoffset: -224; } }
+    @keyframes breathe { 0%, 100% { opacity: .35; } 50% { opacity: .9; } }
+    @keyframes cursor { 0%, 65% { opacity: 1; } 66%, 100% { opacity: .1; } }
+    @keyframes flow { to { stroke-dashoffset: -144; } }
+    @media (prefers-reduced-motion: reduce) {
+      .orbit, .counter-orbit, .signal, .breathe, .cursor, .flow { animation: none; }
+    }
+  </style>
+  <g clip-path="url(#bounds)">
+    <rect width="1200" height="440" fill="url(#bg)"/>
+    <rect width="1200" height="440" fill="url(#grid)"/>
+    <ellipse cx="945" cy="217" rx="330" ry="300" fill="url(#aura)"/>
+    <path d="M60 1H1140" stroke="url(#accent)" stroke-width="2"/>
+    <path d="M60 72H1140" stroke="#223239" stroke-opacity=".8"/>
+    <circle cx="65" cy="40" r="9" fill="#BDFF71" opacity=".18" class="breathe"/>
+    <circle cx="65" cy="40" r="3.5" fill="#BDFF71"/>
+    <text x="81" y="45" class="mono" font-size="14" fill="#CFDDD9">zhe-w12 / building-ai-apps</text>
+    <text x="1140" y="45" text-anchor="end" class="mono" font-size="12" letter-spacing="2" fill="#839792">LLM APPS · AGENTS · RAG</text>
+
+    <text x="60" y="122" class="mono" font-size="13" letter-spacing="3" fill="#9BECBD">AI APPLICATION DEVELOPER</text>
+    <text class="sans" font-size="58" font-weight="800" letter-spacing="-2" fill="#F0F6F3">
+      <tspan x="57" y="188">The child who</tspan>
+      <tspan x="57" y="250">lost the cow<tspan fill="#BDFF71">.</tspan><tspan fill="#BDFF71" class="cursor" dx="6">_</tspan></tspan>
+    </text>
+    <text x="60" y="288" class="sans" font-size="22" font-weight="400" letter-spacing="-.3" fill="#C8D8D2">Building LLM apps, Agents &amp; RAG systems.</text>
+    <text x="60" y="312" class="mono" font-size="13" fill="#7F9690">From prompt to product — models, data and interfaces.</text>
+
+    <g class="mono" font-size="11" letter-spacing="1">
+      <text x="60" y="347" font-size="10" letter-spacing="2" fill="#6F8A81">AI</text>
+      <rect x="108" y="330" width="96" height="26" rx="13" fill="#BDFF71" fill-opacity=".08" stroke="#BDFF71" stroke-opacity=".3"/>
+      <text x="156" y="347" fill="#C2EDA6" text-anchor="middle">LANGGRAPH</text>
+      <rect x="212" y="330" width="89" height="26" rx="13" fill="#BDFF71" fill-opacity=".08" stroke="#BDFF71" stroke-opacity=".3"/>
+      <text x="256.5" y="347" fill="#C2EDA6" text-anchor="middle">LLM APIS</text>
+      <rect x="309" y="330" width="119" height="26" rx="13" fill="#BDFF71" fill-opacity=".08" stroke="#BDFF71" stroke-opacity=".3"/>
+      <text x="368.5" y="347" fill="#C2EDA6" text-anchor="middle">TOOL CALLING</text>
+      <rect x="436" y="330" width="60" height="26" rx="13" fill="#58E8CE" fill-opacity=".07" stroke="#58E8CE" stroke-opacity=".28"/>
+      <text x="466" y="347" fill="#9EDFCC" text-anchor="middle">RAG</text>
+      <rect x="504" y="330" width="80" height="26" rx="13" fill="#58E8CE" fill-opacity=".07" stroke="#58E8CE" stroke-opacity=".28"/>
+      <text x="544" y="347" fill="#9EDFCC" text-anchor="middle">MILVUS</text>
+
+      <text x="60" y="381" font-size="10" letter-spacing="2" fill="#6F8A81">APP</text>
+      <rect x="108" y="364" width="80" height="26" rx="13" fill="#8794FF" fill-opacity=".06" stroke="#8794FF" stroke-opacity=".25"/>
+      <text x="148" y="381" fill="#B7BDF6" text-anchor="middle">PYTHON</text>
+      <rect x="196" y="364" width="88" height="26" rx="13" fill="#8794FF" fill-opacity=".06" stroke="#8794FF" stroke-opacity=".25"/>
+      <text x="240" y="381" fill="#B7BDF6" text-anchor="middle">FASTAPI</text>
+      <rect x="292" y="364" width="96" height="26" rx="13" fill="#8794FF" fill-opacity=".06" stroke="#8794FF" stroke-opacity=".25"/>
+      <text x="340" y="381" fill="#B7BDF6" text-anchor="middle">WEBSOCKET</text>
+      <rect x="396" y="364" width="60" height="26" rx="13" fill="#8794FF" fill-opacity=".06" stroke="#8794FF" stroke-opacity=".25"/>
+      <text x="426" y="381" fill="#B7BDF6" text-anchor="middle">SSE</text>
+      <rect x="464" y="364" width="70" height="26" rx="13" fill="#8794FF" fill-opacity=".06" stroke="#8794FF" stroke-opacity=".25"/>
+      <text x="499" y="381" fill="#B7BDF6" text-anchor="middle">REACT</text>
+      <rect x="542" y="364" width="110" height="26" rx="13" fill="#8794FF" fill-opacity=".06" stroke="#8794FF" stroke-opacity=".25"/>
+      <text x="597" y="381" fill="#B7BDF6" text-anchor="middle">TYPESCRIPT</text>
+    </g>
+
+    <path d="M680 106V339" stroke="#31433F" stroke-opacity=".45" stroke-dasharray="3 9"/>
+    <circle cx="945" cy="217" r="150" stroke="#283C39" stroke-opacity=".7" stroke-dasharray="2 10"/>
+    <circle cx="945" cy="217" r="113" stroke="#36534B" stroke-opacity=".6"/>
+    <circle cx="945" cy="217" r="77" stroke="#3B6255" stroke-opacity=".5" stroke-dasharray="4 12" class="counter-orbit"/>
+    <g class="orbit">
+      <path d="M945 67A150 150 0 0 1 1087.66 170.65" stroke="#BDFF71" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="1087.66" cy="170.65" r="5" fill="#BDFF71"/>
+      <circle cx="1087.66" cy="170.65" r="9" fill="#BDFF71" filter="url(#glow)" opacity=".45"/>
+      <circle cx="802.34" cy="263.35" r="3" fill="#58E8CE"/>
+    </g>
+    <g class="counter-orbit">
+      <path d="M945 104A113 113 0 0 0 847.14 160.5" stroke="#8794FF" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="847.14" cy="160.5" r="4" fill="#A6ADFF"/>
+    </g>
+
+    <path d="M815 120L910 190M1077 158L988 199M1028 327L975 257" stroke="#4F7567" stroke-width="1.5" stroke-dasharray="3 9" class="flow"/>
+    <circle cx="945" cy="217" r="62" stroke="#BDFF71" stroke-opacity=".2" class="breathe"/>
+    <circle cx="945" cy="217" r="51" fill="url(#core)" stroke="#82CFA8" stroke-opacity=".7"/>
+    <path d="M945 156A61 61 0 0 1 1006 217" stroke="#BDFF71" stroke-width="2" stroke-dasharray="28 196" class="signal"/>
+    <text x="945" y="228" text-anchor="middle" class="sans" font-size="35" font-weight="700" letter-spacing="-1" fill="#F0F9ED">AI</text>
+
+    <g class="mono" font-size="11" letter-spacing="1.6">
+      <rect x="768" y="99" width="95" height="38" rx="10" fill="#111E24" stroke="#395347"/>
+      <circle cx="786" cy="118" r="3" fill="#BDFF71"/>
+      <text x="802" y="122" fill="#D6EAC9">LLM</text>
+      <rect x="1037" y="137" width="96" height="38" rx="10" fill="#121C29" stroke="#3B435E"/>
+      <circle cx="1055" cy="156" r="3" fill="#A6ADFF"/>
+      <text x="1071" y="160" fill="#D1D4FF">AGENT</text>
+      <rect x="986" y="309" width="96" height="38" rx="10" fill="#101F24" stroke="#2D5551"/>
+      <circle cx="1004" cy="328" r="3" fill="#58E8CE"/>
+      <text x="1020" y="332" fill="#B9EAE0">RAG</text>
+    </g>
+    <text x="945" y="391" text-anchor="middle" class="mono" font-size="11" letter-spacing="2" fill="#738C83">MODELS × DATA × INTERFACES → REAL APPS</text>
+  </g>
+  <rect x=".5" y=".5" width="1199" height="439" rx="22.5" stroke="#2B3C36"/>
+</svg>
